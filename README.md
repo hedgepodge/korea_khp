@@ -40,3 +40,26 @@ khp_ou_select = khp_ou[(khp_ou['OU3'].str.contains('1706|H40|H42', na=False)) |
 input: directory
 
 output: khp_in (inpatient), khp_ou (outpatient), khp_ind (individual information)
+
+
+
+
+## [`khp_preval_incid_ratio.r`](https://github.com/hedgepodge/korea_khp/blob/master/khp_preval_incid_ratio.r)
+Fuction to export prevalence-incidence ratio for specific diagnosis codes.
+Need to call `khp_code_list.r` function before calling this function. 
+
+### Example. 
+input:
+```r
+directory<-"~/panel"
+diagnosis_code <-c(1110, "A41")
+claim_free_period <- 2
+```
+
+output: 
+```r
+khp_io_summary_diagnosiscode.txt
+khp_io_select_diagnosiscode.txt
+Printing annual number of prevalent people, number of incident people, sum of prevalent people's weights, and sum of incident people' weights.
+```
+
