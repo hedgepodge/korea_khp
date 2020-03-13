@@ -28,12 +28,14 @@ I have tried four encodings; iso-8859-1, euc-kr, utf-8, cp949. Three encodings(e
 
 Also, this failed to select strings from columns containing both numeric and character values. The code below only selected strings containing H40 and H42, not 1706. Still working on this.
 
+'''python
 khp_in_select = khp_in[(khp_in['IN25'].str.contains('1706|H40|H42', na=False)) |
                        (khp_in['IN26'].str.contains('1706|H40|H42', na=False)) |
                        (khp_in['IN27'].str.contains('1706|H40|H42', na=False))]
 khp_ou_select = khp_ou[(khp_ou['OU3'].str.contains('1706|H40|H42', na=False)) |
                        (khp_ou['OU4'].str.contains('1706|H40|H42', na=False)) |
                        (khp_ou['OU5'].str.contains('1706|H40|H42', na=False))]
+'''
 
 input: directory
 
