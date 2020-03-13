@@ -1,7 +1,7 @@
 # KHP
 South Korea's Health Panel data
 
-### [`import_khp.r`](https://github.com/hedgepodge/korea_khp/blob/master/import_khp.r)
+## [`import_khp.r`](https://github.com/hedgepodge/korea_khp/blob/master/import_khp.r)
 Fuction to import KHP data to the global environment in R.
 
 input: directory
