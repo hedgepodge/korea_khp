@@ -24,7 +24,7 @@ khp_in has 160840 observations of 5 variables.
 ## [`import_khp.py`](https://github.com/hedgepodge/korea_khp/blob/master/import_khp.py)
 'Interim' python code to import KHP data to use afterwards.
 However, this code fails to read Korean characters.
-I have tried four encodings; iso-8859-1, euc-kr, utf-8, cp949. euc-kr, utf-8, cpc949 didn't work. Only iso-8859-1 worked but couldn't read Korean character.
+I have tried four encodings; iso-8859-1, euc-kr, utf-8, cp949. Three encodings(euc-kr, utf-8, cpc949) didn't work. Only iso-8859-1 worked but couldn't read Korean character.
 
 Also, this failed to select strings from columns containing both numeric and character values. The code below only selected strings containing H40 and H42, not 1706. Still working on this.
 
