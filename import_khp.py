@@ -1,8 +1,8 @@
 import pandas as pd
 import glob
 import os
-# folder = input('의료패널데이터 sas7bdat가 위치한 디렉토리를 입력하세요. \는 두번씩 입력하세요 (ex. D:\\khp)')
-folder: str = "D:\\health_panel\\khp_version_1.5_SAS(2008~2016)"
+
+folder: str = "D:\\khp_version_1.5_SAS(2008~2016)"
 category = ["ind", "in", "ou"]
 file_list = []
 khp_ind = pd.DataFrame()
