@@ -109,10 +109,10 @@ khp_preval_incid_ratio<-function(directory, diagnosis_code, claim_free_period){
   print(diagnosis_code)
   for (i in 13:(max(khp_ind$yr)-2000)){
     options(digits = 14)
-    print(paste(nrow(subset(khp_io_summary, get(paste0("incidence_weight_at_20", i))>0))),
+    print(paste(nrow(subset(khp_io_summary, get(paste0("incidence_weight_at_20", i))>0)),
           nrow(subset(khp_io_summary, get(paste0("prevalence_weight_at_20", i))>0)),
           sum(select(khp_io_summary, paste0("incidence_weight_at_20", i))),
           sum(select(khp_io_summary, paste0("prevalence_weight_at_20", i))),
-          sep=";")
+          sep=";"))
   }
 }
