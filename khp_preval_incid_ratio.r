@@ -98,11 +98,11 @@ khp_preval_incid_ratio<-function(directory, diagnosis_code, claim_free_period){
   }
   
   write.table(khp_io_summary,
-              paste0(directory, "/khp_io_summary_", diagnosis_code[1],".txt"),
+              paste0(directory, "/khp_io_summary_", diagnosis_code[1], "_", claim_free_period, ".txt"),
               sep="\t",
               row.names=F)
   write.table(khp_io_select,
-              paste0(directory, "/khp_io_select_", diagnosis_code[1],".txt"),
+              paste0(directory, "/khp_io_select_", diagnosis_code[1], "_", claim_free_period, ".txt"),
               sep="\t",
               row.names=F)
   
