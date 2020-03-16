@@ -104,8 +104,8 @@ khp_preval_incid_ratio("~/panel", c(55555), 2)
 
 output: 
 ```r
-khp_io_summary_diagnosiscode.txt
-khp_io_select_diagnosiscode.txt
+khp_io_summary_diagnosiscode_claimfreeperiod.txt
+khp_io_select_diagnosiscode_claimfreeperiod.txt
 Printing annual number of prevalent people, number of incident people, sum of prevalent people's weights, and sum of incident people' weights.
 ```
 
